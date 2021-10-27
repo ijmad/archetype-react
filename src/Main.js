@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Layout from "./Layout";
 
 function Main({ children }) {
   return (
-    <div>
+    <Layout>
       <h1>Welcome</h1>
       <h2>
         <Link to="/1">Page 1</Link>&nbsp;
@@ -11,7 +12,7 @@ function Main({ children }) {
       </h2>
 
       {children}
-    </div>
+    </Layout>
   );
 }
 
