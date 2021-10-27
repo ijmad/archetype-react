@@ -1,13 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const publicPath = path.join(__dirname, "public");
-const contextPath = path.join(__dirname, "src");
+const publicPath = path.join(__dirname, "..", "public");
+const srcPath = path.join(__dirname, "..", "src");
 
 module.exports = {
-  mode: "development",
-  devtool: "eval",
-  context: contextPath,
+  context: srcPath,
   entry: "/Root.js",
   output: {
     path: publicPath,
@@ -19,7 +17,7 @@ module.exports = {
       {
         loader: "babel-loader",
         test: /.js$/,
-        include: contextPath,
+        include: srcPath,
       },
     ],
   },
@@ -28,8 +26,4 @@ module.exports = {
       template: path.join(publicPath, "index.html"),
     }),
   ],
-  devServer: {
-    hot: true,
-    watchFiles: ["src/**"],
-  },
 };
