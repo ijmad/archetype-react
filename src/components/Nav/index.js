@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { StyledLink, StyledNav } from "./styles";
 
 function Nav() {
   return (
-    <>
-      <Link to="/1">Page 1</Link>&nbsp;
-      <Link to="/2">Page 2</Link>&nbsp;
-    </>
+    <StyledNav>
+      <StyledLink to="/1">Page 1</StyledLink>
+      <StyledLink to="/2">Page 2</StyledLink>
+    </StyledNav>
   );
 }
 

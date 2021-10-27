@@ -1,13 +1,22 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Nav from "/src/components/Nav";
+import { StyledTitle, StyledContainer } from "./styles";
 
 function Layout({ title, children }) {
+  const fullTitle = "Hello World" + (title ? ` - ${title}` : "");
+
   return (
     <>
       <Helmet>
-        <title>Hello World {title ? ` - ${title}` : ""}</title>
+        <title>{fullTitle}</title>
       </Helmet>
-      {children}
+
+      <StyledTitle>{fullTitle}</StyledTitle>
+
+      <Nav />
+
+      <StyledContainer>{children}</StyledContainer>
     </>
   );
 }

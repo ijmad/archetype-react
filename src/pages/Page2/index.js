@@ -4,7 +4,7 @@ import Layout from "/src/components/Layout";
 function Page2() {
   return (
     <Layout title="Page 2">
-      <div>Page 2</div>
+      <p>This is Page 2</p>
     </Layout>
   );
 }

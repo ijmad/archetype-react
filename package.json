@@ -19,7 +19,7 @@
     "copy-webpack-plugin": "^9",
     "eslint": "^7",
     "eslint-config-prettier": "^8",
-    "eslint-import-resolver-custom-alias": "^1.3.0",
+    "eslint-import-resolver-custom-alias": "^1",
     "eslint-plugin-import": "^2",
     "eslint-plugin-prettier": "^4",
     "eslint-plugin-react": "^7",
