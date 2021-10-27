@@ -29,6 +29,7 @@
     "react-router": "^5",
     "react-router-dom": "^5",
     "rimraf": "^3",
+    "styled-components": "^5",
     "webpack": "^5",
     "webpack-cli": "^4",
     "webpack-dev-server": "^4",
