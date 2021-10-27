@@ -2,8 +2,8 @@ import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import GlobalStyle from "./GlobalStyle";
-import App from "./App";
+import GlobalStyle from "src/GlobalStyle";
+import App from "src/App";
 
 ReactDOM.render(
   <StrictMode>

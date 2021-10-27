@@ -9,6 +9,12 @@ module.exports = {
     filename: paths.main,
     publicPath: "/",
   },
+  resolve: {
+    extensions: [".js"],
+    alias: {
+      src: paths.src,
+    },
+  },
   module: {
     rules: [
       {

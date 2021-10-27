@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "./Layout";
+import Layout from "src/components/Layout";
 
 function Page1() {
   return (

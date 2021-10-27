@@ -10,6 +10,18 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:react/recommended",
   ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+    "import/resolver": {
+      "eslint-import-resolver-custom-alias": {
+        alias: {
+          src: "./src",
+        },
+      },
+    },
+  },
   rules: {
     "no-unused-vars": "error",
     "import/export": "error",
@@ -22,6 +34,6 @@ module.exports = {
     "import/no-self-import": "error",
     "import/no-unassigned-import": "error",
     "import/no-unresolved": "error",
-    "react/prop-types": "ignore",
+    "react/prop-types": "off",
   },
 };
