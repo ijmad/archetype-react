@@ -22,5 +22,6 @@ module.exports = {
     "import/no-self-import": "error",
     "import/no-unassigned-import": "error",
     "import/no-unresolved": "error",
+    "react/prop-types": "ignore",
   },
 };
