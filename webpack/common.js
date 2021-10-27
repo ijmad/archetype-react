@@ -12,7 +12,7 @@ module.exports = {
   resolve: {
     extensions: [".js"],
     alias: {
-      src: paths.src,
+      "/src": paths.src,
     },
   },
   module: {

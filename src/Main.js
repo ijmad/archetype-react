@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "src/components/Layout";
-import Nav from "src/components/Nav";
+import Layout from "/src/components/Layout";
+import Nav from "/src/components/Nav";
 
 function Main({ children }) {
   return (
