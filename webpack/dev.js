@@ -8,5 +8,6 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
   devServer: {
     static: paths.public,
+    historyApiFallback: true,
   },
 });
